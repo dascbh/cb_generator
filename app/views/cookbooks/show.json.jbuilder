@@ -1,0 +1,1 @@
+json.extract! @cookbook, :id, :name, :node_id, :role_id, :current_version, :description, :aix, :linux, :windows, :comments, :metadata_id, :template_id, :has_template, :released, :created_at, :updated_at

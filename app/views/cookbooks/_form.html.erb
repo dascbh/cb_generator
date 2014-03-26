@@ -1,0 +1,69 @@
+<%= form_for(@cookbook) do |f| %>
+  <% if @cookbook.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cookbook.errors.count, "error") %> prohibited this cookbook from being saved:</h2>
+
+      <ul>
+      <% @cookbook.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :node_id %><br>
+    <%= f.number_field :node_id %>
+  </div>
+  <div class="field">
+    <%= f.label :role_id %><br>
+    <%= f.number_field :role_id %>
+  </div>
+  <div class="field">
+    <%= f.label :current_version %><br>
+    <%= f.text_field :current_version %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :aix %><br>
+    <%= f.check_box :aix %>
+  </div>
+  <div class="field">
+    <%= f.label :linux %><br>
+    <%= f.check_box :linux %>
+  </div>
+  <div class="field">
+    <%= f.label :windows %><br>
+    <%= f.check_box :windows %>
+  </div>
+  <div class="field">
+    <%= f.label :comments %><br>
+    <%= f.text_area :comments %>
+  </div>
+  <div class="field">
+    <%= f.label :metadata_id %><br>
+    <%= f.number_field :metadata_id %>
+  </div>
+  <div class="field">
+    <%= f.label :template_id %><br>
+    <%= f.number_field :template_id %>
+  </div>
+  <div class="field">
+    <%= f.label :has_template %><br>
+    <%= f.check_box :has_template %>
+  </div>
+  <div class="field">
+    <%= f.label :released %><br>
+    <%= f.check_box :released %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

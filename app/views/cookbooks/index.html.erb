@@ -1,0 +1,51 @@
+<h1>Listing cookbooks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Node</th>
+      <th>Role</th>
+      <th>Current version</th>
+      <th>Description</th>
+      <th>Aix</th>
+      <th>Linux</th>
+      <th>Windows</th>
+      <th>Comments</th>
+      <th>Metadata</th>
+      <th>Template</th>
+      <th>Has template</th>
+      <th>Released</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cookbooks.each do |cookbook| %>
+      <tr>
+        <td><%= cookbook.name %></td>
+        <td><%= cookbook.node_id %></td>
+        <td><%= cookbook.role_id %></td>
+        <td><%= cookbook.current_version %></td>
+        <td><%= cookbook.description %></td>
+        <td><%= cookbook.aix %></td>
+        <td><%= cookbook.linux %></td>
+        <td><%= cookbook.windows %></td>
+        <td><%= cookbook.comments %></td>
+        <td><%= cookbook.metadata_id %></td>
+        <td><%= cookbook.template_id %></td>
+        <td><%= cookbook.has_template %></td>
+        <td><%= cookbook.released %></td>
+        <td><%= link_to 'Show', cookbook %></td>
+        <td><%= link_to 'Edit', edit_cookbook_path(cookbook) %></td>
+        <td><%= link_to 'Destroy', cookbook, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cookbook', new_cookbook_path %>

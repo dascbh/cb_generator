@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @cookbook.name %>
+</p>
+
+<p>
+  <strong>Node:</strong>
+  <%= @cookbook.node_id %>
+</p>
+
+<p>
+  <strong>Role:</strong>
+  <%= @cookbook.role_id %>
+</p>
+
+<p>
+  <strong>Current version:</strong>
+  <%= @cookbook.current_version %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @cookbook.description %>
+</p>
+
+<p>
+  <strong>Aix:</strong>
+  <%= @cookbook.aix %>
+</p>
+
+<p>
+  <strong>Linux:</strong>
+  <%= @cookbook.linux %>
+</p>
+
+<p>
+  <strong>Windows:</strong>
+  <%= @cookbook.windows %>
+</p>
+
+<p>
+  <strong>Comments:</strong>
+  <%= @cookbook.comments %>
+</p>
+
+<p>
+  <strong>Metadata:</strong>
+  <%= @cookbook.metadata_id %>
+</p>
+
+<p>
+  <strong>Template:</strong>
+  <%= @cookbook.template_id %>
+</p>
+
+<p>
+  <strong>Has template:</strong>
+  <%= @cookbook.has_template %>
+</p>
+
+<p>
+  <strong>Released:</strong>
+  <%= @cookbook.released %>
+</p>
+
+<%= link_to 'Edit', edit_cookbook_path(@cookbook) %> |
+<%= link_to 'Back', cookbooks_path %>

@@ -1,0 +1,25 @@
+<h1>Listing main_panels</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @main_panels.each do |main_panel| %>
+      <tr>
+        <td><%= link_to 'Show', main_panel %></td>
+        <td><%= link_to 'Edit', edit_main_panel_path(main_panel) %></td>
+        <td><%= link_to 'Destroy', main_panel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Main panel', new_main_panel_path %>
