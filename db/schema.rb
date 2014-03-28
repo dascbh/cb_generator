@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140326034126) do
+ActiveRecord::Schema.define(version: 20140326125558) do
 
   create_table "cookbooks", force: true do |t|
     t.string   "name"
@@ -36,6 +36,20 @@ ActiveRecord::Schema.define(version: 20140326034126) do
     t.datetime "updated_at"
   end
 
+  create_table "metadata", force: true do |t|
+    t.string   "name"
+    t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "metadatas", force: true do |t|
+    t.string   "name"
+    t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "nodes", force: true do |t|
     t.string   "name"
     t.text     "content"
@@ -43,9 +57,23 @@ ActiveRecord::Schema.define(version: 20140326034126) do
     t.datetime "updated_at"
   end
 
+  create_table "plataforms", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "roles", force: true do |t|
     t.string   "name"
     t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "templates", force: true do |t|
+    t.string   "name"
+    t.string   "expected_name"
+    t.string   "file_path"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

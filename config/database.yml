@@ -12,7 +12,7 @@
 development:
   adapter: mysql2
   encoding: utf8
-  database: cb_generator
+  database: cb_generator_dev
   pool: 5
   username: root
   password: explain@123
@@ -28,8 +28,19 @@ test:
   pool: 5
   timeout: 5000
 
+#production:
+#  adapter: sqlite3
+#  database: db/production.sqlite3
+#  pool: 5
+#  timeout: 5000
+
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+  adapter: mysql2
+  encoding: utf8
+  database: cb_generator
   pool: 5
-  timeout: 5000
+  username: root
+  password: explain@123
+  socket: /tmp/mysql.sock
+  host: 127.0.0.1
+

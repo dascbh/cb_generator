@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @metadatum.name %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @metadatum.content %>
+</p>
+
+<%= link_to 'Edit', edit_metadatum_path(@metadatum) %> |
+<%= link_to 'Back', metadata_path %>

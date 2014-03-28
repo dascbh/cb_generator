@@ -21,6 +21,14 @@ gem 'coffee-rails', '~> 4.0.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
+# Twitter Bootstrap
+gem 'bootstrap-sass'
+gem 'font-awesome-rails'
+
+
+# jQuery Magics
+#gem 'jquery-steps-rails'
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
@@ -50,6 +58,7 @@ gem 'mysql2'
 
 
 # deploy
-gem 'capistrano'
-gem 'capistrano-ext'
+#gem 'capistrano'
+#gem 'capistrano-ext'
 
+gem 'jquery-steps-rails', '~> 1.0.4.1'

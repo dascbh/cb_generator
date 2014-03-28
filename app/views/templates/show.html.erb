@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @template.name %>
+</p>
+
+<p>
+  <strong>Expected name:</strong>
+  <%= @template.expected_name %>
+</p>
+
+<p>
+  <strong>File path:</strong>
+  <%= @template.file_path %>
+</p>
+
+<%= link_to 'Edit', edit_template_path(@template) %> |
+<%= link_to 'Back', templates_path %>

@@ -1,0 +1,286 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+@import "bootstrap";
+@import "font-awesome";
+/*
+ * Globals
+ */
+/* Links */
+/* line 13, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/home.css.scss */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+/* line 20, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/home.css.scss */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none;
+  /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+/*
+ * Base structure
+ */
+/* line 33, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/home.css.scss */
+html,
+body {
+  height: 100%;
+  background-color: #333;
+}
+
+/* line 37, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/home.css.scss */
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+/* line 45, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/home.css.scss */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+  /* For at least Firefox */
+  min-height: 100%;
+}
+
+/* line 51, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/home.css.scss */
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+
+/* line 55, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/home.css.scss */
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+/* line 61, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/home.css.scss */
+.inner {
+  padding: 30px;
+}
+
+/*
+ * Header
+ */
+/* line 69, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/home.css.scss */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 74, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/home.css.scss */
+.masthead-nav > li {
+  display: inline-block;
+}
+
+/* line 77, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/home.css.scss */
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+
+/* line 80, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/home.css.scss */
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  /* IE8 proofing */
+  color: rgba(255, 255, 255, 0.75);
+  border-bottom: 2px solid transparent;
+}
+
+/* line 90, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/home.css.scss */
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+/* line 96, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/home.css.scss */
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  /* line 102, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/home.css.scss */
+  .masthead-brand {
+    float: left;
+  }
+
+  /* line 105, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/home.css.scss */
+  .masthead-nav {
+    float: right;
+  }
+}
+/*
+ * Cover
+ */
+/* line 115, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/home.css.scss */
+.cover {
+  padding: 0 20px;
+}
+
+/* line 118, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/home.css.scss */
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+/*
+ * Footer
+ */
+/* line 128, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/home.css.scss */
+.mastfoot {
+  color: #999;
+  /* IE8 proofing */
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/*
+ * Affix and center
+ */
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  /* line 140, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/home.css.scss */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+
+  /* line 144, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/home.css.scss */
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+
+  /* Start the vertical centering */
+  /* line 149, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/home.css.scss */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+
+  /* Handle the widths */
+  /* line 155, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/home.css.scss */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%;
+    /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+@media (min-width: 992px) {
+  /* line 163, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/home.css.scss */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
+/* line 1, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/scaffolds.css.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/scaffolds.css.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/scaffolds.css.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/scaffolds.css.scss */
+a {
+  color: #000;
+}
+/* line 23, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/scaffolds.css.scss */
+a:visited {
+  color: #666;
+}
+/* line 26, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/scaffolds.css.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 33, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/scaffolds.css.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 38, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/scaffolds.css.scss */
+#notice {
+  color: green;
+}
+
+/* line 42, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/scaffolds.css.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 48, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 55, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 65, /home/daniel/webapps/cookbookgenerator/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}

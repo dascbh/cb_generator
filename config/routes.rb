@@ -1,9 +1,15 @@
 Cookbookgenerator::Application.routes.draw do
+  resources :metadata
+
+  resources :plataforms
+
+  resources :templates
+
+  get "metadatas/new"
+  get "home/index"
   resources :roles
 
   resources :nodes
-
-  resources :main_panels
 
   resources :cookbooks
 
@@ -12,7 +18,7 @@ Cookbookgenerator::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   #root 'cookbooks#show'
-root	:to => "cookbooks#show"
+  root	:to => "home#index"
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
