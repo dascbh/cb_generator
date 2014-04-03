@@ -22,5 +22,21 @@ module Cookbookgenerator
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
     # incluse the assets from ../assets/fonts as well
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
+    # mail sender configuration
+    config.action_mailer.smtp_settings = {
+     :address              => "smtp.gmail.com",
+     :port                 => 587,
+     :domain               => "yourdomain.dev",
+     :user_name            => "from@yourdomain.dev",
+     :password             => "Super-Secure-Password",
+     :authentication       => :plain,
+     :enable_starttls_auto => true
+   }
+
+   config.action_mailer.default_url_options = {
+     :host => "yourdomain.dev"
+  }
+
+    config.action_view.field_error_proc = Proc.new { |html_tag, instance| html_tag }
   end
 end

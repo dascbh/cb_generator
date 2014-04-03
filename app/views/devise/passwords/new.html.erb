@@ -1,0 +1,15 @@
+<div class="container">
+
+<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post, :class => 'form-signin', :role=> 'form' }) do |f| %>
+
+   <h3 class="form-signin-heading">Reset password</h3><br />
+
+  <div><%= f.email_field :email, autofocus: true, :class=>'form-control', :placeholder=>'Email address', required: true%></div>
+  <br />
+  <div><%= f.submit "Send reset email", :class=>'btn btn-lg btn-primary btn-block' %></div>
+  
+  <br />
+  <%= devise_error_messages! %>
+<% end %>
+
+</div>

@@ -1,6 +1,8 @@
 class CookbooksController < ApplicationController
   before_action :set_cookbook, only: [:show, :edit, :update, :destroy]
+  
 
+  before_action :authenticate_user!
   # GET /cookbooks
   # GET /cookbooks.json
   def index

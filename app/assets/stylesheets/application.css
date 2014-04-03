@@ -15,3 +15,13 @@
  /*
  *= require font-awesome
  */
+
+@import "bootstrap";
+
+ body {
+  min-height: 200px;
+}
+
+.navbar-static-top {
+  margin-bottom: 19px;
+}

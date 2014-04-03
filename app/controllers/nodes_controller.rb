@@ -1,6 +1,7 @@
 class NodesController < ApplicationController
   before_action :set_node, only: [:show, :edit, :update, :destroy]
-
+  
+  before_action :authenticate_user!
   # GET /nodes
   # GET /nodes.json
   def index

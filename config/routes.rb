@@ -1,4 +1,7 @@
 Cookbookgenerator::Application.routes.draw do
+  get "contact_us/new"
+  get "contact_us/create"
+  devise_for :users
   resources :metadata
 
   resources :plataforms
@@ -13,6 +16,8 @@ Cookbookgenerator::Application.routes.draw do
 
   resources :cookbooks
 
+#  match 'contact_us' => 'contact_us#new', :as => 'contact_us', :via => :get
+#  match 'contact_us' => 'contact_us#create', :as => 'contact_us', :via => :post
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

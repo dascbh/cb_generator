@@ -62,3 +62,6 @@ gem 'mysql2'
 #gem 'capistrano-ext'
 
 gem 'jquery-steps-rails', '~> 1.0.4.1'
+
+# authentication
+gem 'devise'

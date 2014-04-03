@@ -1,0 +1,19 @@
+<div class="container">
+
+
+<%= form_for(resource, :html => { :class => 'form-signin', :role=> 'form'}, as: resource_name, url: registration_path(resource_name)) do |f| %>
+
+      <h2 class="form-signin-heading">Sign up</h2><br />
+  <div><%= f.email_field :email, autofocus: true, :class=>'form-control', :placeholder=>'Email address', required: true %></div>
+  <br />
+  <div><%= f.password_field :password, autocomplete: "off", :class=>'form-control', :placeholder=>'Password', required: true %></div>
+
+  <div><%= f.password_field :password_confirmation, autocomplete: "off", :class=>'form-control', :placeholder=>'Retype Password', required: true %></div>
+
+  <div><%= f.submit "Sign up", :class=>'btn btn-lg btn-primary btn-block' %></div>
+  <br />
+<%= devise_error_messages! %>
+
+<% end %>
+
+    </div> <!-- /container -->
