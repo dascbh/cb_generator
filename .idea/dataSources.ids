@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="Rails cookbookgenerator: development" uuid="d4948d2e-8501-49e6-a751-893446b57b29">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails cookbookgenerator: test" uuid="32b67c5b-6565-4795-b716-a6bdd6c26435">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails cookbookgenerator: production" uuid="96a3f124-8cc6-4c55-ab4c-0a9458ad4e5a">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>
