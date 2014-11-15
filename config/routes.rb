@@ -1,4 +1,6 @@
 Cookbookgenerator::Application.routes.draw do
+  resources :supports, :only => [:new, :create]
+
   get "contact_us/new"
   get "contact_us/create"
   devise_for :users

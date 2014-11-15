@@ -65,3 +65,7 @@ gem 'jquery-steps-rails', '~> 1.0.4.1'
 
 # authentication
 gem 'devise'
+
+# mailer
+gem 'mail'
+gem 'foreman'

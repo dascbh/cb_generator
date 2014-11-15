@@ -31,11 +31,6 @@ ActiveRecord::Schema.define(version: 20140401020028) do
     t.datetime "updated_at"
   end
 
-  create_table "main_panels", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "metadata", force: true do |t|
     t.string   "name"
     t.text     "content"
